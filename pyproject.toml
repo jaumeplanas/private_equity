@@ -33,6 +33,7 @@ dependencies = [
     # Add some constraints to Odoo deps that should be in their setup.py
     "lxml[html_clean]>=5.2",
     "setuptools<71",
+    "werkzeug==0.14.1",
 ]
 addons_dirs = ["odoo/addons"]
 

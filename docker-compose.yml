@@ -1,5 +1,6 @@
 services:
   web:
+    platform: linux/amd64
     build: .
     depends_on:
       - db
@@ -15,9 +16,10 @@ services:
       - DB_PASSWORD=odoo
       - DB_NAME=odoo
       - LIST_DB=True
-      - DB_NAME=testos18
+      - DB_NAME=test17
   db:
-    image: postgres:16
+    image: postgres:14
+    platform: linux/amd64
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_PASSWORD=odoo
@@ -26,6 +28,7 @@ services:
       - private-equity-db-data:/var/lib/postgresql/data
   kwkhtmltopdf:
     image: ghcr.io/acsone/kwkhtmltopdf:0.12.5-latest
+    platform: linux/amd64
 volumes:
   private-equity-odoo-data:
   private-equity-db-data:
