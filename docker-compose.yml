@@ -17,6 +17,7 @@ services:
       - DB_NAME=odoo
       - LIST_DB=True
       - DB_NAME=test17
+      - WORKERS=0
   db:
     image: postgres:14
     platform: linux/amd64
