@@ -23,7 +23,7 @@ Private Equity
 |badge1| |badge2| |badge3|
 
 This module includes several addons to create a basic Private Equity
-Management framework. M
+Management framework.
 
 **Table of contents**
 
@@ -83,7 +83,6 @@ Current maintainer:
 
 |maintainer-jaumeplanas| 
 
-QQQ.
-This module is part of the `jaumeplanas/private_equity <https://github.com/jaumeplanas/private_equity/tree/18.0//private_equity>`_ project on GitHub.
+This module is part of the `jaumeplanas/private_equity <https://github.com/jaumeplanas/private_equity/tree/18.0/odoo/addons/private_equity>`_ project on GitHub.
 
 You are welcome to contribute.
