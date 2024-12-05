@@ -7,7 +7,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "private_equity"
-version = "17.0.0.1.0"
+version = "18.0.0.1.0"
 description = "Private Equity PoC"
 readme = "README.md"
 requires-python = "==3.12.*"
@@ -29,13 +29,13 @@ packages = ["odoo"]
 [tool.hatch-odoo]
 # dependencies that are not in the addons manifest
 dependencies = [
-    "odoo==17.0.*",
+    "odoo==18.0.*",
     # Add some constraints to Odoo deps that should be in their setup.py
     "lxml[html_clean]>=5.2",
     "setuptools<71",
-    "werkzeug==0.14.1",
+    "werkzeug==3.0.1",
 ]
 addons_dirs = ["odoo/addons"]
 
 [tool.uv.sources]
-odoo = { git = "https://github.com/OCA/OCB", branch = "17.0" }
+odoo = { git = "https://github.com/OCA/OCB", branch = "18.0" }
