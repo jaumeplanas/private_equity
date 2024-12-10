@@ -6,9 +6,9 @@ build-backend = "hatchling.build"
 
 
 [project]
-name = "private_equity"
+name = "fund_mgmt"
 version = "18.0.0.1.0"
-description = "Private Equity PoC"
+description = "Private Fund Management"
 readme = "README.md"
 requires-python = "==3.12.*"
 dynamic = ["dependencies"]

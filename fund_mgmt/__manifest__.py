@@ -1,5 +1,5 @@
 {
-    "name": "Private Equity",
+    "name": "Fund Management",
     "author": "Jaume Planas",
     "website": "https://www.jaumeplanas.cat",
     "maintainers": ["jaumeplanas"],

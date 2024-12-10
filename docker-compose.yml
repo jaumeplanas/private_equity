@@ -4,43 +4,38 @@ services:
     platform: linux/amd64
     build: .
     depends_on:
-      # - db
+      - db
       - kwkhtmltopdf
     ports:
       - "8069:8069"
     volumes:
       - private-equity-odoo-data:/data/odoo
     environment:
-      - DB_HOST=postgres
+      - DB_HOST=db
       - DB_PORT=5432
-      - DB_USER=fundcraft
-      - DB_PASSWORD=Qih48NACmJzujxlfiVj0hYjCLzRcftIW1ddjW9Z9VuMSTyUL9z
+      - DB_USER=odoo
+      - DB_PASSWORD=odoo
       - DB_FILTER=.*
       - LIST_DB=True
       - WORKERS=0
       - ADMIN_PASSWD=1234
       - SERVER_SIDE_MODULES=base,web
-    networks:
-      - fc-network
 
-  # db:
-  #   image: postgres:14
-  #   platform: linux/amd64
-  #   environment:
-  #     - POSTGRES_DB=postgres
-  #     - POSTGRES_PASSWORD=odoo
-  #     - POSTGRES_USER=odoo
-  #   volumes:
-  #     - private-equity-db-data:/var/lib/postgresql/data
+  db:
+    image: postgres:14
+    platform: linux/amd64
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_USER=odoo
+    volumes:
+      - private-equity-db-data:/var/lib/postgresql/data
+
   kwkhtmltopdf:
     image: ghcr.io/acsone/kwkhtmltopdf:0.12.5-latest
     platform: linux/amd64
 
-networks:
-  fc-network:
-    external: true
-
 volumes:
   private-equity-odoo-data:
-  # private-equity-db-data:
+  private-equity-db-data:
    

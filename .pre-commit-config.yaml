@@ -1,4 +1,4 @@
-files: ^odoo/addons/
+files: ^fund_mgmt
 exclude: |
   (?x)
   # NOT INSTALLABLE ADDONS
@@ -88,7 +88,7 @@ repos:
         args: ["https://www.jaumeplanas.cat"]
       - id: oca-gen-addon-readme
         args:
-          - --addons-dir=odoo/addons
+          - --addons-dir=.
           - --branch=18.0
           - --org-name=jaumeplanas
           - --repo-name=private_equity
