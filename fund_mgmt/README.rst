@@ -1,6 +1,6 @@
-==============
-Private Equity
-==============
+===============
+Fund Management
+===============
 
 .. 
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -17,12 +17,12 @@ Private Equity
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-jaumeplanas%2Fprivate_equity-lightgray.png?logo=github
-    :target: https://github.com/jaumeplanas/private_equity/tree/18.0/private_equity
+    :target: https://github.com/jaumeplanas/private_equity/tree/18.0/fund_mgmt
     :alt: jaumeplanas/private_equity
 
 |badge1| |badge2| |badge3|
 
-This module includes several addons to create a basic Private Equity
+This module includes several addons to create a basic Private Fund
 Management framework.
 
 **Table of contents**
@@ -35,8 +35,8 @@ Development
 
 Addons proposed
 
-- Transfer Agency
-- Portfolio Manager
+- Transfer Agency (TA)
+- Portfolio Manager (PM)
 - AIFM
 
 Known issues / Roadmap
@@ -55,7 +55,7 @@ Bug Tracker
 Bugs are tracked on `GitHub Issues <https://github.com/jaumeplanas/private_equity/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-`feedback <https://github.com/jaumeplanas/private_equity/issues/new?body=module:%20private_equity%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://github.com/jaumeplanas/private_equity/issues/new?body=module:%20fund_mgmt%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -83,6 +83,6 @@ Current maintainer:
 
 |maintainer-jaumeplanas| 
 
-This module is part of the `jaumeplanas/private_equity <https://github.com/jaumeplanas/private_equity/tree/18.0/odoo/addons/private_equity>`_ project on GitHub.
+This module is part of the `jaumeplanas/private_equity <https://github.com/jaumeplanas/private_equity/tree/18.0/fund_mgmt>`_ project on GitHub.
 
 You are welcome to contribute.
