@@ -273,27 +273,6 @@ wheels = [
 ]
 
 [[package]]
-name = "fund-mgmt"
-version = "18.0.0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "lxml", extra = ["html-clean"] },
-    { name = "odoo" },
-    { name = "odoo-addon-account-usability" },
-    { name = "setuptools" },
-    { name = "werkzeug" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "lxml", extras = ["html-clean"], specifier = ">=5.2" },
-    { name = "odoo", git = "https://github.com/OCA/OCB?branch=18.0" },
-    { name = "odoo-addon-account-usability", specifier = "==18.0.*" },
-    { name = "setuptools", specifier = "<71" },
-    { name = "werkzeug", specifier = "==3.0.1" },
-]
-
-[[package]]
 name = "geoip2"
 version = "4.8.1"
 source = { registry = "https://pypi.org/simple" }
@@ -552,17 +531,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "odoo-addon-account-usability"
-version = "18.0.1.0.0.6"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "odoo" },
-]
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/75/25/62ed43c778e37e165aba4b168e64db98817a10074e69a9993d55060a1683/odoo_addon_account_usability-18.0.1.0.0.6-py3-none-any.whl", hash = "sha256:f0df095a45135a7f77bb4857f45bb6c5a08ca181263998f038ec244bb7170602", size = 47017 },
-]
-
-[[package]]
 name = "ofxparse"
 version = "0.21"
 source = { registry = "https://pypi.org/simple" }
@@ -629,6 +597,25 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/10/9a/79b1067d27e38ddf84fe7da6ec516f1743f31f752c6122193e7bce38bdbf/polib-1.2.0.tar.gz", hash = "sha256:f3ef94aefed6e183e342a8a269ae1fc4742ba193186ad76f175938621dbfc26b", size = 161658 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/6b/99/45bb1f9926efe370c6dbe324741c749658e44cb060124f28dad201202274/polib-1.2.0-py2.py3-none-any.whl", hash = "sha256:1c77ee1b81feb31df9bca258cbc58db1bbb32d10214b173882452c73af06d62d", size = 20634 },
+]
+
+[[package]]
+name = "private-equity"
+version = "18.0.0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "lxml", extra = ["html-clean"] },
+    { name = "odoo" },
+    { name = "setuptools" },
+    { name = "werkzeug" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "lxml", extras = ["html-clean"], specifier = ">=5.2" },
+    { name = "odoo", git = "https://github.com/OCA/OCB?branch=18.0" },
+    { name = "setuptools", specifier = "<71" },
+    { name = "werkzeug", specifier = "==3.0.1" },
 ]
 
 [[package]]

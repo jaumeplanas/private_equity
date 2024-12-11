@@ -6,9 +6,9 @@ build-backend = "hatchling.build"
 
 
 [project]
-name = "fund_mgmt"
+name = "private_equity"
 version = "18.0.0.1.0"
-description = "Private Fund Management"
+description = "Private Equity Management"
 readme = "README.md"
 requires-python = "==3.12.*"
 dynamic = ["dependencies"]
@@ -17,7 +17,7 @@ dynamic = ["dependencies"]
 [tool.uv]
 cache-keys = [
     { file = "pyproject.toml" },
-    { file = "*/__manifest__.py" },
+    { file = "odoo/addons/*/__manifest__.py" },
 ]
 
 [tool.hatch.build]
@@ -35,7 +35,7 @@ dependencies = [
     "setuptools<71",
     "werkzeug==3.0.1",
 ]
-addons_dirs = ["."]
+addons_dirs = ["odoo/addons"]
 
 [tool.uv.sources]
 odoo = { git = "https://github.com/OCA/OCB", branch = "18.0" }
