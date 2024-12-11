@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="pe_module_category" model="ir.module.category">
+        <field name="name">Private Equity</field>
+        <field name="visible" eval="0" />
+    </record>
+</odoo>
