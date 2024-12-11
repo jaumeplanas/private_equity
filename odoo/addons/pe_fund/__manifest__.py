@@ -1,5 +1,5 @@
 {
-    "name": "Private Equity Base",
+    "name": "Private Equity Fund",
     "author": "Jaume Planas",
     "website": "https://www.jaumeplanas.cat",
     "maintainers": ["jaumeplanas"],

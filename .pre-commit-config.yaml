@@ -1,4 +1,4 @@
-files: ^pe_
+files: ^pe_fund
 exclude: |
   (?x)
   # NOT INSTALLABLE ADDONS
